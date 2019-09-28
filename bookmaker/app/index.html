@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello from Electron</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h1>Bookmaker</h1>
+    <div class="error-message"></div>
+    <section class="add-new-link">
+        <form class="new-link-form">
+            <input type="url" class="new-link-url" placeholder="URL" size="100" required>
+            <input type="submit" class="new-link-submit" value="Submit" disabled>
+        </form>
+    </section>
+    <section class="links"></section>
+    <section class="controls">
+        <button class="clear-storage">Clear Storage</button>
+    </section>
+    <script>
+           require('./render')
+    </script>
+</body>
+</html>
